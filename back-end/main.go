@@ -30,7 +30,7 @@ const (
 //	@license.name	Apache 2.0
 //	@license.url	http://www.apache.org/licenses/LICENSE-2.0.html
 
-//	@host	10.177.88.190:8800
+//	@host	10.177.88.168:8800
 
 // @securityDefinitions.apiKey	ApiKeyAuth
 // @in							header

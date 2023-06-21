@@ -213,7 +213,7 @@ func UpdateUser(c *gin.Context) {
 		})
 		return
 	}
-	if json["id"] == "" {
+	if json["user_id"] == "" {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": userIDRequiredErrorMessage,
 		})

@@ -3,7 +3,6 @@ package controllers
 import (
 	"bytes"
 	"fmt"
-	"github.com/lib/pq"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -60,7 +59,7 @@ func CreateSeat(c *gin.Context) {
 			X:      utils.Stoi(m["x"].(string), 8).(int8),
 			Y:      utils.Stoi(m["y"].(string), 8).(int8),
 			Status: utils.Stoi(m["status"].(string), 8).(int8),
-			S:      pq.ByteaArray{[]byte{123}},
+			S:      []int8{1, 2, 3},
 			Plug:   m["plug"].(bool),
 		}
 		if err := seat.Create(); err != nil {
